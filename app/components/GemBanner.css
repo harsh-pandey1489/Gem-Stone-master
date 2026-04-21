@@ -1,0 +1,207 @@
+.gem-banner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 120px 90px;
+
+
+    /* Background design image */
+    background-image: url("https://res.cloudinary.com/dd9tagtiw/image/upload/v1766992308/Group_87_aykgkf.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    color: #FFFFFF;
+    overflow: hidden;
+    max-width: 1720px;
+    margin: 0 auto;
+}
+
+/* Guru image on RIGHT using ::before */
+.gem-banner::before {
+    content: "";
+    position: absolute;
+    right: 40px;
+    bottom: 0;
+    width: 300px;
+    height: 300px;
+
+    background-image: url("/banner-guru.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom right;
+
+    z-index: 0;
+}
+
+/* Content stays LEFT */
+.gem-banner__content {
+    max-width: 55%;
+    position: relative;
+    z-index: 1;
+}
+
+/* Typography */
+.gem-banner h1 {
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 16px;
+    max-width: 630px;
+}
+
+.gem-banner h1 span {
+    font-weight: 600;
+}
+
+.subtitle {
+    font-size: 24px;
+    line-height: 1.6;
+    margin-bottom: 28px;
+    color: #FFFFFF;
+    max-width: 500px;
+    
+}
+
+/* Buttons */
+.cta-buttons {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 28px;
+}
+
+.btn {
+    padding: 12px 22px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-icon {
+    font-size: 25px;
+}
+
+
+.btn.primary {
+    background: #E57661;
+    color: #FFFFFF;
+}
+
+.btn.outline {
+    background: transparent;
+    border: 1.5px solid #FFFFFF;
+    color: #FFFFFF;
+}
+
+/* Reviews */
+.reviews {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.review-item {
+    display: flex;
+    align-items: center;
+}
+
+.review-img {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+}
+
+
+/* Mobile */
+/* ================= TABLET ================= */
+@media (max-width: 1024px) {
+  .gem-banner {
+    padding: 40px 32px;
+    min-height: auto;
+  }
+
+  .gem-banner h1 {
+    font-size: 34px;
+  }
+
+  .subtitle {
+    font-size: 15px;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 10px 18px;
+  }
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+  .gem-banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  /* REMOVE ABSOLUTE IMAGE BEHAVIOR */
+  /* .gem-banner::before {
+    position: static;
+    width: 260px;
+    height: 320px;
+    margin: 24px auto 0;
+    background-position: center bottom;
+  } */
+
+  .gem-banner__content {
+    max-width: 100%;
+  }
+
+  .gem-banner h1 {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .cta-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .reviews {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .review-img {
+    height: 50px;
+  }
+}
+
+/* ================= SMALL MOBILE ================= */
+@media (max-width: 480px) {
+  .gem-banner h1 {
+    font-size: 24px;
+  }
+
+  .btn {
+    font-size: 15px;
+    padding: 10px 16px;
+  }
+
+  .review-img {
+    height: 44px;
+  }
+}

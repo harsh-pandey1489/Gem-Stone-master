@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+
+.hero {
+  height: 580px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 80px;
+  max-width: 1720px;
+  margin: 0 auto;
+}
+
+/* WHITE CARD */
+.hero-content {
+  background: #fff;
+  padding: 32px;
+  max-width: 420px;
+  border-radius: 10px;
+}
+
+.hero-content h1 {
+  font-size: 28px;
+  line-height: 1.3;
+  margin-bottom: 10px;
+}
+
+.hero-content h1 span {
+  color: #E57661;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 14px;
+}
+
+.flat-text {
+  font-family: 'Dancing Script', cursive;
+  font-size: 20px;
+  margin-right: 4px;
+}
+
+.offer {
+  margin: 20px 0;
+}
+
+.offer strong {
+  color: #E57661;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.offer-sub {
+  display: block;
+  font-size: 13px;
+  color: #555;
+  margin-top: 4px;
+}
+
+
+
+/* BUTTONS */
+.hero-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.btn-primary {
+  background: #E57661;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid #E57661;
+  color: #E57661;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* DOTS */
+.hero-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 6px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background: #ddd;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #E57661;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1024px) {
+  .hero {
+    padding-left: 40px;
+    height: 520px;
+  }
+
+  .hero-content {
+    max-width: 380px;
+    padding: 28px;
+  }
+
+  .hero-content h1 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding: 40px 20px;
+    justify-content: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    padding: 24px;
+    border-radius: 8px;
+  }
+
+  .hero-content h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .subtitle {
+    text-align: center;
+  }
+
+  .offer {
+    text-align: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 30px 16px;
+  }
+
+  .hero-content {
+    padding: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 22px;
+  }
+
+  .flat-text {
+    font-size: 18px;
+  }
+
+  .offer strong {
+    font-size: 18px;
+  }
+
+  .hero-dots {
+    bottom: 10px;
+  }
+}
