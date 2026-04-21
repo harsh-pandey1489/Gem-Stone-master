@@ -17,7 +17,7 @@ const AboutComponent = () => {
       <AboutThird/>
       <AboutFourth/>
       <AboutFifth/>
-      <AboutSixth/>
+      {/* <AboutSixth/> */}
       
     </>
   )
