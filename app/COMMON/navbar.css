@@ -87,6 +87,7 @@
 
 .logo img {
     height: 60px;
+    cursor: pointer;
 }
 
 .nav-left {
