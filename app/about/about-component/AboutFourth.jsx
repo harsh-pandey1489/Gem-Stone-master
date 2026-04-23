@@ -31,8 +31,10 @@ export default function AboutFourth() {
           </div>
 
           <div className="mt-8">
-            <button className="flex items-center cursor-pointer gap-2 text-[16px] font-semibold tracking-wide">
-              EXPLORE SERVICES →
+            <button className="flex group items-center cursor-pointer gap-2 text-[16px] font-semibold tracking-wide">
+              EXPLORE SERVICES   <span className="transition-transform duration-300 group-hover:translate-x-2">
+                  →
+                </span>
             </button>
           </div>
         </div>

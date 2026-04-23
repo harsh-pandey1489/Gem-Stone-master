@@ -64,7 +64,7 @@ export default function HomeEigth() {
                 {cards.map((card) => (
                     <div
                         key={card.id}
-                        className="relative rounded-[40px] md:mx-30  overflow-hidden"
+                        className="relative rounded-[40px]  md:mx-10 xl:mx-30  overflow-hidden"
                     >
                         {/* IMAGE GRID */}
                         <div className="grid grid-cols-1 md:grid-cols-2">

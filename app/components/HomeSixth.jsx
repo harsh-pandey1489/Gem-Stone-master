@@ -19,7 +19,7 @@ export default function HomeSixth(){
             Discover the Root Cause
           </button>
 
-          <button className="px-8 py-4 cursor-pointer rounded-lg border-3 bg-white border-[#E57661] text-[#E57661] font-[400] text-lg transition-all duration-300 hover:bg-[#E57661] hover:text-white">
+          <button className="px-8 py-4 cursor-pointer rounded-lg border bg-white border-[#E57661] text-[#E57661] font-[400] text-lg transition-all duration-300 hover:bg-[#E57661] hover:text-white">
             Get Your Space Analyzed
           </button>
 

@@ -10,11 +10,14 @@ import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import SearchPopup from '../components/SearchPopup';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import Image from 'next/image';
 
 export default function Navbar() {
     const router = useRouter();
     const [open, setOpen] = useState(false);
     const [showPopup, setShowPopup] = useState(false);
+    const pathname = usePathname();
 
     return (
         <header className="navbar-wrapper">
@@ -39,7 +42,12 @@ export default function Navbar() {
                             placeholder="Search"
                             readOnly
                         />
-                        <FiSearch className="search-icon" />
+                       <Image
+                       src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776947585/search_zecwfo.png"
+                       width={20}
+                       height={20}
+                       className='object-contain'
+                        />
                     </div>
 
                     <div className="top-links desktop-only">
@@ -68,14 +76,26 @@ export default function Navbar() {
                     <div className="nav-left">
 
 
-                        <ul className="menu desktop-only ">
-                            <ul className="menu desktop-only">
-                                <li><Link href="/vastu-consulting">Vastu Consulting</Link></li>
-                                <li><Link href="/astrology-services">Astrology Services</Link></li>
-                                <li><Link href="/shop">Shop</Link></li>
-                                <li><Link href="/about">About us</Link></li>
-                                <li><Link href="/blog">Blog</Link></li>
-                            </ul>
+                        <ul className="menu desktop-only">
+                            <li className={pathname === '/vastu-consulting' ? 'active' : ''}>
+                                <Link href="/vastu-consulting">Vastu Consulting</Link>
+                            </li>
+
+                            <li className={pathname === '/astrology-services' ? 'active' : ''}>
+                                <Link href="/astrology-services">Astrology Services</Link>
+                            </li>
+
+                            <li className={pathname === '/shop' ? 'active' : ''}>
+                                <Link href="/shop">Shop</Link>
+                            </li>
+
+                            <li className={pathname === '/about' ? 'active' : ''}>
+                                <Link href="/about">About us</Link>
+                            </li>
+
+                            <li className={pathname === '/blog' ? 'active' : ''}>
+                                <Link href="/blog">Blog</Link>
+                            </li>
                         </ul>
                     </div>
                     <a href="tel:+918595046368" className="astro-left px-3 rounded-[7px] bg-[#FFF5E9]">

@@ -5,10 +5,6 @@ export default function AstrologySteps() {
   return (
     <section className="relative py-20 bg-[radial-gradient(140.3%_104.29%_at_10%_20%,rgba(254,212,136,0.15)_0%,#F8F9FA_90%)] overflow-hidden">
  
-
-
-
-
       <div className="relative z-10 max-w-7xl mx-auto px-6 space-y-2">
          <h5 className=" text-2xl md:text-4xl md:mb-0 mb-9 text-[#303030]  font-[500]">Three Steps to Alignment</h5>
 
