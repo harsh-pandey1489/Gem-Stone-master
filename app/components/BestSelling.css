@@ -18,7 +18,7 @@
 
 .trusted-header h2 {
   font-size: 26px;
-  font-weight: 700;
+  font-weight: 500;
   color: #303030;
 }
 
@@ -27,14 +27,16 @@
   display: flex;
   justify-content: space-between;
   gap: 10px;
-  margin-bottom: 40px;
+  margin: auto;
   background-color: white;
+  max-width: 1300px;
+  
 }
 
 .tab {
   border: none;
   background: transparent;
-  padding: 20px 50px;
+  padding: 25px;
   cursor: pointer;
   font-size: 16px;
 }
@@ -42,6 +44,7 @@
 .tab.active {
   background: #E57661;
   color: #fff;
+  margin: 0px 18px;
 }
 
 /* GRID */
@@ -49,6 +52,8 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
+      max-width: 1200px;
+    margin: auto;
 }
 
 /* CARD */
@@ -69,19 +74,22 @@
 
 
 .product-card h4 {
-  font-size: 14px;
+  font-size: 17px;
   margin-bottom: 4px;
+  border-top: 1px solid #eae5e5;
+  padding-top: 20px;
+ 
 }
 
 .product-card p {
-  font-size: 12px;
+  font-size: 15px;
   color: #777;
 }
 
 .product-card strong {
   display: block;
   margin-top: 8px;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 600;
 }
 
@@ -128,8 +136,9 @@
   display: flex;
   align-items: center; /* 🔥 icon + text same line */
   gap: 8px;
-  font-size: 14px;
+  font-size: 20px;
   color: #333;
+
 }
 
 .benefit-icon {

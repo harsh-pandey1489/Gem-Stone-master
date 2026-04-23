@@ -20,9 +20,9 @@ export default function AboutFourth() {
           </div>
 
           <div>
-            <h2 className="text-2xl md:text-3xl font-[500] mb-4">
+            <h3 className="text-2xl md:text-3xl font-[500] mb-4">
               Deep Personal Reading
-            </h2>
+            </h3>
 
             <p className="text-sm md:text-base text-white leading-relaxed max-w-[400px]">
               Our architects don't just read charts; they interpret life paths.
@@ -49,9 +49,9 @@ export default function AboutFourth() {
             />
           </div>
 
-          <h2 className="text-2xl md:text-3xl font-[500] mb-3">
+          <h3 className="text-2xl md:text-3xl font-[500] mb-3">
             Transit Updates
-          </h2>
+          </h3>
 
           <p className="text-[16px] text-gray-600 max-w-xs mb-6">
             Receive weekly notifications about how current planetary movements affect your chart.

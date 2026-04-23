@@ -4,6 +4,7 @@ import { useState } from 'react';
 import './BestSelling.css';
 import { FiHeart } from 'react-icons/fi';
 import { GiCheckMark } from "react-icons/gi";
+import Link from 'next/link';
 
 const TABS = [
     'Emerald (Panna)',
@@ -108,8 +109,9 @@ export default function BestSelling() {
                     </span>
                 </div>
 
-
-                <button className="view-all">View All</button>
+                <Link href="/astrology-services">
+                    <button className="view-all">View All</button>
+                </Link>
             </div>
         </section>
     );

@@ -38,9 +38,9 @@ export default function AboutFifth() {
 
             {/* Heading */}
             <div className="text-center mb-10 px-4">
-                <h2 className="text-3xl md:text-[39px] font-[500] text-[#303030]">
+                <h3 className="text-3xl md:text-[39px] font-[500] text-[#303030]">
                     What We Do
-                </h2>
+                </h3>
                 <p className="text-[#303030] mt-5 max-w-[650px] text-[21px] mx-auto">
                     We focus on identifying problems and providing practical solutions
                     without unnecessary changes.
@@ -66,9 +66,9 @@ export default function AboutFifth() {
                             />
 
 
-                            <h3 className="text-[24px] font-[500] mt-4 text-[#191C1D]">
+                            <h4 className="text-[24px] font-[500] mt-4 text-[#191C1D]">
                                 {card.title}
-                            </h3>
+                            </h4>
 
                             {card.subtitle && (
                                 <p className="text-[15px] text-[#303030] mt-1">
