@@ -3,20 +3,20 @@ import Image from "next/image";
 import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 export default function HeroNewSection() {
     return (
-<section
+        <section
             className="
     relative w-full xl:py-20 flex items-center justify-center text-white
 
-   xl:bg-[url('https://res.cloudinary.com/dd9tagtiw/image/upload/v1766992308/Group_87_aykgkf.png')]
+   bg-[url('https://res.cloudinary.com/dd9tagtiw/image/upload/v1766992308/Group_87_aykgkf.png')]
 
     bg-cover bg-center
   "
         >
 
             {/* Overlay (optional for better text visibility) */}
-            <div className="xl:hidden absolute inset-0 bg-[#E57661]/70"></div>
+            {/* <div className="xl:hidden absolute inset-0 bg-[#E57661]/70"></div> */}
 
-            <div className="relative z-10 max-w-7xl w-full px-6 pt-10 xl:py-12 flex flex-col-reverse lg:flex-row items-center justify-between gap-10">
+            <div className="relative z-10 max-w-7xl w-full px-6 pt-10 xl:py-12 flex flex-col lg:flex-row items-center justify-between md:gap-10">
 
                 {/* LEFT CONTENT */}
                 <div className="w-full lg:pb-0 pb-10 lg:w-1/2 text-center lg:text-left">
@@ -25,7 +25,7 @@ export default function HeroNewSection() {
                         Align Your Life with Astrology
                     </h1>
 
-                    <p className="text-[#FFFFFF] mt-4 text-sm sm:text-base lg:text-[24px] max-w-[500px]">
+                    <p className="text-[#FFFFFF] mt-4 text-[18px] sm:text-base lg:text-[24px] max-w-[500px]">
                         Create balance, attract success, and unlock positive energy in every aspect of life.
                     </p>
 

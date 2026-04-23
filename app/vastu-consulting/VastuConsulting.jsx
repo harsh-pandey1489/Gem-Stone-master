@@ -1,18 +1,20 @@
+
 "use client"
+import Footer from '../COMMON/Footer'
+import Navbar from '../COMMON/Navbar'
+import FaQ from '../components/FaQ'
+import Testimonials from '../components/Testimonials'
+import VastuEigth from './VastuEigth'
+import VastuFourth from './VastuFourth'
+import VastuHero from './VastuHero'
+import VastuNinth from './VastuNinth'
+import VastuSecond from './VastuSecond'
+import VastuSeveth from './VastuSeventh'
+import VastuSixth from './VastuSixth'
+import VastuThird from './VastuThird'
 
-import Navbar from "../COMMON/Navbar"
-import FaQ from "../components/FaQ"
-import AboutEigth from "./about-component/AboutEigth"
-import AboutFifth from "./about-component/AboutFifth"
-import AboutFourth from "./about-component/AboutFourth"
-import AboutHero from "./about-component/AboutHero"
-import AboutSecond from "./about-component/AboutSecond"
-import AboutSeventh from "./about-component/AboutSeventh"
-import AboutSixth from "./about-component/AboutSixth"
-import AboutThird from "./about-component/AboutThird"
-
-const AboutComponent = () => {
-     const faqData = [
+const VastuConsulting = () => {
+       const faqData = [
   {
     question: "Who is the best business consultant in India?",
     answer:
@@ -37,18 +39,19 @@ const AboutComponent = () => {
   return (
     <>
     <Navbar/>
-      <AboutHero/>
-      <AboutSecond/>
-      <AboutThird/>
-      <AboutFourth/>
-      <AboutFifth/>
-      <AboutSixth/>
-      <AboutSeventh/>
-      <AboutEigth/>
+      <VastuHero/>
+      <VastuSecond/>
+      <VastuThird/>
+      <VastuFourth/>
+      <VastuSixth/>
+      <VastuSeveth/>
+      <VastuEigth/>
+      <VastuNinth/>
+      <Testimonials/>
       <FaQ data={faqData}/>
-      
+      <Footer/>
     </>
   )
 }
 
-export default AboutComponent
+export default VastuConsulting

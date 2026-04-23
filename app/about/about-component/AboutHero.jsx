@@ -12,17 +12,17 @@ export default function AboutHero() {
 
     >
       <div className="absolute inset-0 -z-10 overflow-hidden">
-        <div className="relative w-full md:w-[170%]  h-full">
+        <div className="relative w-full  h-full">
           <Image
-            src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776405311/mystical-numerology-scene_2_m39keo.png"
+            src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776933909/starss_fpqv8f.png"
             alt="background"
             fill
             priority
-            className="object-cover object-left"
+            className="object-contain"
           />
         </div>
       </div>
-      {/* Overlay for gradient color */}
+
       <div className="absolute inset-0 bg-gradient-to-r from-[#b45c54]/60 to-[#b96a7a]/90"></div>
 
       {/* Content */}

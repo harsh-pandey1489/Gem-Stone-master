@@ -1,18 +1,13 @@
 "use client"
+import React from 'react'
+import AstrologySteps from './AstrologySteps'
+import AstralSection from './AstralSection'
+import Testimonials from '../components/Testimonials'
+import FaQ from '../components/FaQ'
+import Navbar from '../COMMON/Navbar'
 
-import Navbar from "../COMMON/Navbar"
-import FaQ from "../components/FaQ"
-import AboutEigth from "./about-component/AboutEigth"
-import AboutFifth from "./about-component/AboutFifth"
-import AboutFourth from "./about-component/AboutFourth"
-import AboutHero from "./about-component/AboutHero"
-import AboutSecond from "./about-component/AboutSecond"
-import AboutSeventh from "./about-component/AboutSeventh"
-import AboutSixth from "./about-component/AboutSixth"
-import AboutThird from "./about-component/AboutThird"
-
-const AboutComponent = () => {
-     const faqData = [
+const ServicesComponent = () => {
+        const faqData = [
   {
     question: "Who is the best business consultant in India?",
     answer:
@@ -34,21 +29,17 @@ const AboutComponent = () => {
       "Yes, you can contact Shubham Gupta Business Consultant to get a free consultation and understand how to improve your business.",
   },
 ];
-  return (
-    <>
-    <Navbar/>
-      <AboutHero/>
-      <AboutSecond/>
-      <AboutThird/>
-      <AboutFourth/>
-      <AboutFifth/>
-      <AboutSixth/>
-      <AboutSeventh/>
-      <AboutEigth/>
-      <FaQ data={faqData}/>
-      
-    </>
-  )
+    return (
+        <div>
+            <Navbar />
+            <AstrologySteps />
+            <AstralSection />
+            <Testimonials />
+
+            <FaQ data={faqData}/>
+
+        </div>
+    )
 }
 
-export default AboutComponent
+export default ServicesComponent

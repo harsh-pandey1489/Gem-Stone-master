@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import Image from 'next/image'
 
@@ -58,7 +59,7 @@ const HomeSecond = () => {
                         }}
                     >
 
-                        <div className="absolute inset-0 bg-[#E57661]/70 mix-blend-multiply"></div>
+                        <div className="absolute inset-0 bg-[#E57661] mix-blend-multiply"></div>
 
                         <div className="relative z-10">
                             <Image
@@ -118,11 +119,11 @@ const HomeSecond = () => {
                         </p>
 
                         <div className="flex gap-4 flex-wrap">
-                            <button className="bg-[#E57661] rounded-[6px] text-white px-5 py-2 ">
+                            <button className="bg-[#E57661] rounded-[6px] text-white px-10 py-5 ">
                                 Shop Collection
                             </button>
 
-                            <button className="border border-[#E57661] text-[#E57661] px-10 py-5">
+                            <button className="border border-[#E57661] rounded-[6px] text-[#E57661] px-10 py-5">
                                 Authenticity Guide
                             </button>
                         </div>

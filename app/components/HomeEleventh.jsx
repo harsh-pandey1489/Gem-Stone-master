@@ -22,7 +22,7 @@ export default function HomeEleventh() {
             <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-[60%_40%] gap-10 items-center">
 
                 {/* LEFT TEXT */}
-                <div className="text-white space-y-6 ">
+                <div className="text-white space-y-6 xl:px-0 px-10">
                     <h1 className="text-3xl sm:text-4xl md:text-5xl max-w-[600px]  font-[500] leading-tight">
                         Get a Glimpse into Your
                         Future with Our Accurate

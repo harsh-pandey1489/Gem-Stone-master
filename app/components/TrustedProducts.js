@@ -4,6 +4,7 @@ import { useState } from 'react';
 import './TrustedProducts.css';
 import { FiHeart } from 'react-icons/fi';
 import { GiCheckMark } from "react-icons/gi";
+import Link from 'next/link';
 
 const TABS = [
   'Emerald (Panna)',
@@ -58,7 +59,8 @@ export default function TrustedProducts() {
       </div>
 
       {/* TABS */}
-      <div className="tabs">
+    <div className='tab-container'>
+        <div className="tabs">
         {TABS.map((tab) => (
           <button
             key={tab}
@@ -69,6 +71,7 @@ export default function TrustedProducts() {
           </button>
         ))}
       </div>
+    </div>
 
       {/* PRODUCTS */}
       <div className="product-grid">
@@ -108,8 +111,9 @@ export default function TrustedProducts() {
   </span>
 </div>
 
-
-        <button className="view-all">View All</button>
+  <Link href="/astrology-services">
+                    <button className="view-all">View All</button>
+                </Link>
       </div>
     </section>
   );
