@@ -1,0 +1,73 @@
+/* Product Detail Styles */
+
+.product-image-container {
+    position: relative;
+}
+
+.product-image-carousel {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+    overflow-x: auto;
+}
+
+.product-image-carousel::-webkit-scrollbar {
+    height: 6px;
+}
+
+.product-image-carousel::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.product-image-carousel::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.product-image-carousel::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Tabs Animation */
+.tab-button {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.tab-button::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #EF7E6A;
+    transition: width 0.3s ease;
+}
+
+.tab-button.active::after {
+    width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .product-details-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-details-grid {
+        gap: 24px;
+    }
+
+    .tabs-container {
+        gap: 16px;
+        overflow-x: auto;
+    }
+
+    .tabs-container::-webkit-scrollbar {
+        height: 4px;
+    }
+}
