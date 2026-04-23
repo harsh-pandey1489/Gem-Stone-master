@@ -23,6 +23,7 @@ import HomeNinth from "./components/HomeNinth";
 import HomeTenth from "./components/HomeTenth";
 import HomeEleventh from "./components/HomeEleventh";
 import FaQ from "./components/FaQ";
+import Footer from "./COMMON/Footer";
 
 export default function Home() {
    const faqData = [
@@ -132,6 +133,7 @@ export default function Home() {
       <SemiPreciousSlider /> */}
       <Testimonials /> 
        <FaQ data={faqData}/>
+       <Footer/>
       {/* <FAQSection /> */}
     </div>
   );

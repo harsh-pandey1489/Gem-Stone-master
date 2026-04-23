@@ -5,6 +5,10 @@ import AstralSection from './AstralSection'
 import Testimonials from '../components/Testimonials'
 import FaQ from '../components/FaQ'
 import Navbar from '../COMMON/Navbar'
+import Footer from '../COMMON/Footer'
+import AstrologyServicesHero from '../components/AstrologyServicesHero'
+import AstrologyClarity from '../components/AstrologyClarity'
+import DigitalBirthChart from '../components/DigitalBirthChart'
 
 const ServicesComponent = () => {
         const faqData = [
@@ -32,11 +36,15 @@ const ServicesComponent = () => {
     return (
         <div>
             <Navbar />
+            <AstrologyServicesHero/>
+            <AstrologyClarity/>
+            <DigitalBirthChart/>
             <AstrologySteps />
             <AstralSection />
             <Testimonials />
 
             <FaQ data={faqData}/>
+            <Footer/>
 
         </div>
     )
