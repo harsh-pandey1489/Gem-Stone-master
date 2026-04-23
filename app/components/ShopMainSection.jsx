@@ -95,7 +95,7 @@ const ShopMainSection = () => {
 
   return (
     <section
-      className="pb-28 pt-10"
+      className="pt-10"
     >
       <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-30">
 

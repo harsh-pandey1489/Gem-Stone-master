@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../COMMON/Navbar';
 import ShopHeaderSection from '../components/ShopHeaderSection';
 import ShopMainSection from '../components/ShopMainSection';
+import Footer from '../COMMON/Footer';
 
 export const metadata = {
     title: 'Shop Gemstones | Gemstone Website',
@@ -41,8 +42,10 @@ export default function ShopPage() {
                 </div>
 
                 <div className="relative z-10">
+
                     <ShopHeaderSection />
                     <ShopMainSection />
+                    <Footer/>
                     {/* <AlchemicalOutcome /> */}
                 </div>
             </main>

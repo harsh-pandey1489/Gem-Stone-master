@@ -106,19 +106,19 @@ export default function VastuFourth() {
 
             switch (item.position) {
               case "left-top":
-                pos = "absolute left-0 xl:left-45 -top-7 -translate-y-10";
+                pos = "absolute left-0 lg:left-38 xl:left-45 -top-7 -translate-y-10";
                 break;
               case "left-middle":
-                pos = "absolute left-0 xl:left-34 top-20   -translate-y-1/2";
+                pos = "absolute left-0 lg:left-20 xl:left-34 top-20   -translate-y-1/2";
                 break;
               case "bottom":
-                pos = "absolute -bottom-14 xl:left-154 -translate-x-1/2 translate-y-12";
+                pos = "absolute -bottom-14 lg:left-138 xl:left-154 -translate-x-1/2 translate-y-12";
                 break;
               case "right-top":
-                pos = "absolute right-0  xl:right-42 -top-8 -translate-y-10";
+                pos = "absolute right-0 lg:right-30 xl:right-42 -top-8 -translate-y-10";
                 break;
               case "right-middle":
-                pos = "absolute -right-5 lg:right-1 xl:right-18 top-20 -translate-y-1/2";
+                pos = "absolute -right-5 lg:right-2 xl:right-18 top-20 -translate-y-1/2";
                 break;
             }
 

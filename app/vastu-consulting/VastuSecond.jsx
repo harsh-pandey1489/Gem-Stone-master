@@ -46,17 +46,17 @@ export default function VastuSecond() {
 
                 <div className="hidden md:block absolute left-1/2 top-0  w-[2px] h-full bg-[#E57661]/40" />
 
-                <div className="flex flex-col gap-20">
+                <div className="flex flex-col gap-10 md:gap-20">
                     {data.map((item, index) => {
                         const isLeft = index % 2 === 0;
 
                         return (
                             <div
                                 key={index}
-                                className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] items-center gap-6"
+                                className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] items-center gap-4 xl:gap-6"
                             >
                                 {/* LEFT */}
-                                <div className={`hidden md:block ${isLeft ? "text-right" : ""}`}>
+                                <div className={`hidden md:block ${isLeft ? "md:text-right" : ""}`}>
                                     {isLeft && <Content item={item} align="right" />}
                                 </div>
 
@@ -68,7 +68,7 @@ export default function VastuSecond() {
                                 </div>
 
                                 {/* RIGHT */}
-                                <div className={`hidden md:block ${!isLeft ? "text-left" : ""}`}>
+                                <div className={`hidden md:block ${!isLeft ? "md:text-left" : ""}`}>
                                     {!isLeft && <Content item={item} align="left" />}
                                 </div>
 
@@ -89,17 +89,17 @@ function Content({ item, align }) {
     return (
         <div
             className={`flex flex-col gap-4 max-w-[420px]
-        ${align === "right" ? " xl:ml-auto items-end text-left" : ""}
-        ${align === "left" ? " xl:ml-36 items-start text-left" : ""}
-        ${align === "center" ? "mx-auto items-center text-center" : ""}
+        ${align === "right" ? " xl:ml-auto items-end md:text-left" : ""}
+        ${align === "left" ? " xl:ml-36 items-start md:text-left" : ""}
+        ${align === "center" ? "mx-auto items-center md:text-center" : ""}
       `}
         >
-            <h3 className="text-2xl md:text-3xl md:text-left w-full font-[500] text-[#333]">
+            <h3 className="text-2xl md:text-3xl md:text-left  w-full font-[500] text-[#333]">
                 {item.title}
             </h3>
 
             <div className="w-full">
-                <p className="text-[#101010] text-[16px] md:text-[23px] max-w-[340px] leading-relaxed">
+                <p className="text-[#101010] text-[16px] md:text-[23px] md:max-w-[340px] md:px-0 px-10 leading-relaxed">
                     {item.desc}
                 </p>
             </div>

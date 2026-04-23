@@ -41,7 +41,7 @@ export default function HomeFifth() {
                 </div>
 
                 {/* Main Layout */}
-                <div className="grid md:grid-cols-[55%_40%] gap-10 md:gap-20 items-stretch">
+                <div className="grid xl:grid-cols-[55%_40%] gap-10 md:gap-20 items-stretch">
 
                     {/* LEFT GRID */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">

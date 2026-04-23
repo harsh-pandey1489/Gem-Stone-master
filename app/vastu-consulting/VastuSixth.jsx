@@ -121,7 +121,7 @@ export default function VastuSixth() {
 
                     {/* RIGHT CARD */}
                     <div className="bg-[#FFFFFF] px-12 xl:py-0 py-6 rounded-[40px] flex lg:flex-row flex-col gap-9 items-center">
-                        <div className="md:w-[200px] md:h-[200px] rounded-xl overflow-hidden shrink-0">
+                        <div className="lg:w-[200px] lg:h-[200px] rounded-xl overflow-hidden shrink-0">
                             <Image
                                 src={data.industrial.img}
                                 alt="industrial"

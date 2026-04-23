@@ -56,7 +56,7 @@ export default function AboutThird() {
             {/* Bottom Link */}
             <div className="mt-10">
               <button
-                className={`flex items-center gap-2 text-sm md:text-base font-medium ${item.linkColor} group`}
+                className={`flex items-center cursor-pointer gap-2 text-sm md:text-base font-medium ${item.linkColor} group`}
               >
                 View Strategic Roadmap
                 <span className="transition-transform duration-300 group-hover:translate-x-2">

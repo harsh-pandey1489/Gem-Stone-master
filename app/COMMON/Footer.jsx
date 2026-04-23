@@ -14,7 +14,7 @@ export default function Footer() {
             <div className="max-w-[1350px] mx-auto px-6 md:px-10 py-12">
 
                 {/* TOP GRID */}
-                <div className="grid grid-cols-1  lg:grid-cols-[30%_69%] gap-15">
+                <div className="grid grid-cols-1  xl:grid-cols-[30%_69%] gap-15">
 
                     {/* LEFT SECTION */}
                     <div>
@@ -27,7 +27,7 @@ export default function Footer() {
                             />
                         </div>
 
-                        <p className="text-lg leading-relaxed max-w-[350px] text-[#303030] mb-6">
+                        <p className="text-lg leading-relaxed max-w-[450px] xl:max-w-[350px] text-[#303030] mb-6">
                             Shop God dresses online specifically the ethnic ones with Indian
                             traditional mix, simply glorifies the god statues.
                         </p>
@@ -47,7 +47,7 @@ export default function Footer() {
                         </div>
                     </div>
 
-                 <div className="grid grid-cols-1 md:grid-cols-[30%_30%_40%] md:gap-0 gap-10 ">
+                 <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-[30%_30%_40%] md:gap-0 gap-10 ">
                        {/* USEFUL LINKS */}
                     <div>
                         <h3 className="font-[500] text-lg mb-4">Useful Links</h3>

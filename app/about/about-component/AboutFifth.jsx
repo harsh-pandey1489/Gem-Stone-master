@@ -54,7 +54,7 @@ export default function AboutFifth() {
                     {[...cards, ...cards, ...cards, ...cards].map((card, i) => (
                         <div
                             key={i}
-                            className="w-[280px] md:w-[360px] bg-white rounded-[40px] shadow-sm p-6 mx-4 flex-shrink-0"
+                            className="w-[280px] md:w-[360px] bg-white rounded-[40px]  p-6 mx-4 flex-shrink-0"
                         >
 
                             <Image

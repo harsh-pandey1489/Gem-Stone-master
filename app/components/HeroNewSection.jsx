@@ -16,16 +16,16 @@ export default function HeroNewSection() {
             {/* Overlay (optional for better text visibility) */}
             {/* <div className="xl:hidden absolute inset-0 bg-[#E57661]/70"></div> */}
 
-            <div className="relative z-10 max-w-7xl w-full px-6 pt-10 xl:py-12 flex flex-col lg:flex-row items-center justify-between md:gap-10">
+            <div className="relative z-10 max-w-7xl w-full md:px-6 pt-10 xl:py-12 flex flex-col lg:flex-row items-center justify-between md:gap-10">
 
                 {/* LEFT CONTENT */}
-                <div className="w-full lg:pb-0 pb-10 lg:w-1/2 text-center lg:text-left">
+                <div className="w-full md:px-0 px-10 xl:pb-0 pb-10 lg:w-1/2 text-center lg:text-left">
                     <h1 className="text-white text-2xl sm:text-3xl lg:text-[40px] max-w-[690px] font-[500] leading-tight">
                         Transform Your Space with Vastu
                         Align Your Life with Astrology
                     </h1>
 
-                    <p className="text-[#FFFFFF] mt-4 text-[18px] sm:text-base lg:text-[24px] max-w-[500px]">
+                    <p className="text-[#FFFFFF] mt-4 text-[18px]  sm:text-base lg:text-[24px] xl:max-w-[500px]">
                         Create balance, attract success, and unlock positive energy in every aspect of life.
                     </p>
 
@@ -49,7 +49,7 @@ export default function HeroNewSection() {
                 </div>
 
                 {/* RIGHT IMAGE (BABA) */}
-                <div className="xl:hidden  w-full lg:w-[400px]  bottom-[-10] flex justify-center lg:justify-end">
+                <div className="md:hidden  w-full lg:w-[400px]  bottom-[-10] flex justify-center lg:justify-end">
                     <Image
                         src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776405399/banner-baba_tlmud0.png"
                         alt="Baba"

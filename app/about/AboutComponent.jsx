@@ -1,5 +1,6 @@
 "use client"
 
+import Footer from "../COMMON/Footer"
 import Navbar from "../COMMON/Navbar"
 import FaQ from "../components/FaQ"
 import AboutEigth from "./about-component/AboutEigth"
@@ -46,6 +47,7 @@ const AboutComponent = () => {
       <AboutSeventh/>
       <AboutEigth/>
       <FaQ data={faqData}/>
+      <Footer/>
       
     </>
   )
