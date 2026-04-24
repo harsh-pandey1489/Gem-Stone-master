@@ -5,10 +5,10 @@ import React from 'react';
 
 const AstrologyServicesHero = () => {
     return (
-        <section className="max-w-[1720px] mx-auto  flex items-center justify-center bg-white pt-10 xl:pt-1 pb-4 px-[9%] overflow-hidden">
-            <div className=" w-full flex flex-col xl:flex-row items-center justify-between md:gap-12">
+        <section className="max-w-[1720px] mx-auto  flex items-center justify-center bg-white pt-10 xl:pt-1 md:pb-0 pb-4 px-[9%] overflow-hidden">
+            <div className=" w-full flex flex-col xl:flex-row items-center justify-between xl:gap-12">
                 {/* Left Content */}
-                <div className="flex-1 max-w-[550px] animate-fade-in-left lg:text-left ">
+                <div className="flex-1 xl:max-w-[550px] animate-fade-in-left lg:text-left ">
                     <p className="text-[22px] text-[#303030] mb-2 font-[350]">Celestial Precision</p>
                     <h1 className="text-3xl xl:max-w-[500px] md:text-4xl lg:text-6xl leading-[1.2] text-[#303030] font-[500] mb-8 tracking-normal">
                         Discover What

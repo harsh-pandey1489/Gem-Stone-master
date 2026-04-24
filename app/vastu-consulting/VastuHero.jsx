@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function VastuHero() {
     return (
         <section className="bg-[#F7F7F7] py-10 md:pt-10 md:pb-4 px-4 md:px-10 xl:px-20">
-            <div className="max-w-7xl mx-auto grid xl:grid-cols-[40%_57%] gap-10 items-center">
+            <div className="max-w-7xl mx-auto grid xl:grid-cols-[40%_50%] gap-20 xl:gap-40 items-center">
 
                 <div className=" lg:text-left xl:mb-7 ">
                     <p className="text-[#E57661] text-xs md:text-[16px] font-[500] mb-3">
@@ -35,18 +35,22 @@ export default function VastuHero() {
 
                 {/* RIGHT IMAGE */}
                 <div className="relative">
-                    <div className="rounded-[24px] overflow-hidden ">
+                 <div className="relative w-full  rounded-[24px]
+    h-[250px] 
+    sm:h-[300px] 
+    md:h-[400px] 
+    lg:h-[700px] 
+    xl:h-[600px]">
                         <Image
-                            src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776759154/TransformYourSpace_TranscendYourLife._s6ytmh.png"
-                            alt="Interior"
-                            width={700}
-                            height={500}
-                            className="w-full h-full object-cover"
-                        />
+    src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776759154/TransformYourSpace_TranscendYourLife._s6ytmh.png"
+    alt="Interior"
+    fill
+    className="object-contain "
+/>
                     </div>
 
                     {/* TOP ICON */}
-                    <div className="hidden md:flex absolute -top-1 left-3 bg-white shadow-lg rounded-[25px] w-20 h-20 items-center justify-center">
+                    <div className="hidden md:flex absolute -top-1 left-30 xl:left-3 bg-white shadow-lg rounded-[25px] w-20 h-20 items-center justify-center">
                         <div className="w-10 h-10 rounded-full flex items-center justify-center">
                             <Image
                                 src='https://res.cloudinary.com/dumjuhrob/image/upload/v1776763689/ANCIENT_WISDOM_MODERN_LIVING_v86qn5.png'
