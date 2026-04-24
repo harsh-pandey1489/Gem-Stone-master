@@ -40,7 +40,7 @@ export default function AboutFourth() {
         </div>
 
         {/* RIGHT CARD */}
-        <div className="bg-[#FFFFFF] rounded-2xl p-6 md:p-10 flex flex-col items-center justify-center text-center min-h-[300px]">
+        <div className="bg-[#FFFFFF] rounded-2xl p-6 xl:p-10 flex flex-col items-center justify-center text-center min-h-[300px]">
 
           <div className="mb-4">
             <Image
