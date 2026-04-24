@@ -3,8 +3,8 @@ import Image from "next/image";
 
 export default function VastuHero() {
     return (
-        <section className="bg-[#F7F7F7] py-10 md:pt-10 md:pb-4 px-4 md:px-10 lg:px-20">
-            <div className="max-w-7xl mx-auto grid lg:grid-cols-[40%_57%] gap-10 items-center">
+        <section className="bg-[#F7F7F7] py-10 md:pt-10 md:pb-4 px-4 md:px-10 xl:px-20">
+            <div className="max-w-7xl mx-auto grid xl:grid-cols-[40%_57%] gap-10 items-center">
 
                 <div className=" lg:text-left xl:mb-7 ">
                     <p className="text-[#E57661] text-xs md:text-[16px] font-[500] mb-3">

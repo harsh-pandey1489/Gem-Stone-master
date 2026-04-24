@@ -4,9 +4,9 @@ import Image from "next/image";
 export default function AstrologySteps() {
   return (
     <section className="relative py-20 bg-[radial-gradient(140.3%_104.29%_at_10%_20%,rgba(254,212,136,0.15)_0%,#F8F9FA_90%)] overflow-hidden">
- 
+
       <div className="relative z-10 max-w-7xl mx-auto px-6 space-y-2">
-         <h5 className=" text-2xl md:text-4xl md:mb-0 mb-9 text-[#303030]  font-[500]">Three Steps to Alignment</h5>
+        <h5 className=" text-2xl md:text-4xl md:mb-0 mb-9 text-[#303030]  font-[500]">Three Steps to Alignment</h5>
 
         <div className="absolute inset-0 flex justify-center pointer-events-none">
           <div className="relative w-[75%] h-full ">
@@ -23,7 +23,7 @@ export default function AstrologySteps() {
         <div className="grid md:grid-cols-[42%_60%] items-center gap-10 text-center md:text-left">
 
           {/* TEXT */}
-          <div className="bg-white border-2 relative  border-[#DCC0BB1A] p-6 md:p-10 rounded-3xl mx-auto md:mx-0">
+          <div className="bg-white border-2 relative  border-[#DCC0BB1A] p-6 md:p-12 rounded-3xl mx-auto md:mx-0">
             <p className="text-5xl md:text-6xl text-[#E5766133] font-bold mb-4">01</p>
             <h3 className="text-xl md:text-2xl text-[#303030] font-[500] mb-3">
               Input Birth Data
@@ -36,7 +36,7 @@ export default function AstrologySteps() {
 
           {/* IMAGE */}
           <div className="flex justify-center">
-            <div className="w-[260px] h-[260px] md:w-[400px] md:h-[390px] relative">
+            <div className="w-[260px] h-[260px] md:w-[400px] md:h-[370px] relative">
               <Image
                 src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776922603/Input_Birth_Data_ryrj5t.png"
                 alt="step1"
@@ -51,7 +51,7 @@ export default function AstrologySteps() {
         <div className="grid md:grid-cols-[50%_43%] items-center gap-12">
           {/* IMAGE */}
           <div className="flex justify-center md:order-1 order-2">
-            <div className="relative w-[320px] h-[320px] md:w-[380px] md:h-[360px]">
+            <div className="relative w-[320px] h-[320px] md:w-[380px] md:h-[370px]">
               <Image
                 src="https://res.cloudinary.com/dumjuhrob/image/upload/v1776922605/Planetary_Analysis_nkqjf9.png"
                 alt="step2"

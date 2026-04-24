@@ -25,7 +25,7 @@ export default function AboutSeventh() {
     ];
 
     return (
-        <section className=" max-w-[1720px] mx-auto bg-[radial-gradient(113.61%_98.59%_at_20%_70%,#D6E3FF_0%,rgba(214,227,255,0)_40%),radial-gradient(106.8%_92.68%_at_70%_30%,#FFDEA5_0%,rgba(255,222,165,0)_40%)] py-10 px-4 md:px-10 lg:px-30">
+        <section className=" max-w-[1720px] mx-auto bg-[radial-gradient(113.61%_98.59%_at_20%_70%,#D6E3FF_0%,rgba(214,227,255,0)_40%),radial-gradient(106.8%_92.68%_at_70%_30%,#FFDEA5_0%,rgba(255,222,165,0)_40%)] py-10 px-4 md:px-10 xl:px-30">
 
             <div className="flex flex-col justify-center items-center text-center pt-5  pb-10 px-4">
 

@@ -67,7 +67,7 @@ export default function VastuSixth() {
                     </div>
 
                     {/* SMALL CARD */}
-                    <div className="bg-[#D9735B] h-[350px]  text-white p-11 rounded-3xl flex flex-col justify-between">
+                    <div className="bg-[#D9735B] h-[350px]  text-white p-11 lg:p-8 xl:p-11 rounded-3xl flex flex-col justify-between">
                         <div>
                             <Image
                                 src={data.commercial.icon}

@@ -9,6 +9,7 @@ import { FiArrowRight, FiShoppingCart, FiHeart } from 'react-icons/fi';
 import { FaInstagramSquare } from 'react-icons/fa';
 import './ProductDetail.css';
 import { FaLinkedin } from 'react-icons/fa';
+import Footer from '../COMMON/Footer';
 
 const ProductDetailSection = ({ product }) => {
     const [quantity, setQuantity] = useState(1);
@@ -160,11 +161,11 @@ const ProductDetailSection = ({ product }) => {
                         <div className="flex flex-col min-[500px]:flex-row items-stretch min-[500px]:items-center gap-4">
 
                             {/* Quantity Box */}
-                            <div className="flex items-center border border-gray-200 h-[54px] rounded-md overflow-hidden">
+                            <div className=" w-fit flex items-center border border-gray-200 h-[54px] rounded-md overflow-hidden">
 
                                 <button
                                     onClick={() => handleQuantityChange(quantity - 1)}
-                                    className="w-12 h-full flex items-center justify-center text-xl text-[#303030] hover:bg-gray-50"
+                                    className=" w-12 cursor-pointer h-full flex items-center justify-center text-xl text-[#303030] hover:bg-gray-50"
                                 >
                                     −
                                 </button>
@@ -173,12 +174,12 @@ const ProductDetailSection = ({ product }) => {
                                     type="number"
                                     value={quantity}
                                     readOnly
-                                    className="w-12 h-full text-center font-bold text-[#303030] outline-none"
+                                    className="w-12 cursor-pointer h-full text-center font-bold text-[#303030] outline-none"
                                 />
 
                                 <button
                                     onClick={() => handleQuantityChange(quantity + 1)}
-                                    className="w-12 h-full flex items-center justify-center text-xl text-[#303030] hover:bg-gray-50"
+                                    className="w-12 cursor-pointer h-full flex items-center justify-center text-xl text-[#303030] hover:bg-gray-50"
                                 >
                                     +
                                 </button>
@@ -186,7 +187,7 @@ const ProductDetailSection = ({ product }) => {
                             </div>
 
                             {/* Add to Cart */}
-                            <button className="flex-1 bg-[#EF7E6A] text-white font-bold h-[54px] rounded-md hover:bg-[#E56A52] transition uppercase tracking-widest text-[14px] flex items-center justify-center gap-2">
+                            <button className="w-fit md:flex-1 cursor-pointer bg-[#EF7E6A] px-6 md:px-0 text-white font-bold h-[54px] rounded-md hover:bg-[#E56A52] transition uppercase tracking-widest text-[14px] flex items-center justify-center gap-2">
 
                                 <FiShoppingCart className="text-lg" />
                                 ADD TO CART
@@ -196,7 +197,7 @@ const ProductDetailSection = ({ product }) => {
                         </div>
 
                         {/* Wishlist */}
-                        <button className="w-full border border-[#EF7E6A] text-[#EF7E6A] font-bold h-[54px] rounded-md hover:bg-[#fff5f3] transition uppercase tracking-widest text-[14px] flex items-center justify-center gap-2">
+                        <button className="w-full border cursor-pointer border-[#EF7E6A] text-[#EF7E6A] font-bold h-[54px] rounded-md hover:bg-[#fff5f3] transition uppercase tracking-widest text-[14px] flex items-center justify-center gap-2">
 
                             <FiHeart className="text-lg" />
                             ADD TO WISHLIST
@@ -292,7 +293,7 @@ const ProductDetailSection = ({ product }) => {
 
                             </div>
 
-                            <button className="h-[48px] w-full min-[500px]:w-auto px-6 py-2 border border-[#E57661] text-[#E57661] text-[13px] font-[500] uppercase tracking-widest hover:bg-[#E57661] hover:text-white transition whitespace-nowrap rounded-sm">
+                            <button className="h-[48px] w-full cursor-pointer min-[500px]:w-auto px-6 py-2 border border-[#E57661] text-[#E57661] text-[13px] font-[500] uppercase tracking-widest hover:bg-[#E57661] hover:text-white transition whitespace-nowrap rounded-sm">
                                 CONTACT US
                             </button>
 
@@ -351,7 +352,7 @@ const ProductDetailSection = ({ product }) => {
                         <button
                             key={tab}
                             onClick={() => setActiveTab(tab)}
-                            className={`text-[14px] font-[500] uppercase tracking-[0.11em] pb-6 relative transition-all ${
+                            className={`text-[14px] font-[500] cursor-pointer uppercase tracking-[0.11em] pb-6 relative transition-all ${
                                 activeTab === tab
                                     ? 'text-[#E57661] after:content-[""] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-[#E57661]'
                                     : 'text-[#303030]'
@@ -525,7 +526,7 @@ const ProductDetailSection = ({ product }) => {
 
                             </div>
 
-                            <button className="flex items-center gap-2 text-[14px] font-[400] border-b border-white pb-1 hover:gap-3 transition-all uppercase tracking-widest">
+                            <button className="flex items-center cursor-pointer gap-2 text-[14px] font-[400] border-b border-white pb-1 hover:gap-3 transition-all uppercase tracking-widest">
 
                                 Download Full Ritual Guide
 
@@ -540,7 +541,9 @@ const ProductDetailSection = ({ product }) => {
                 </div>
 
             </div>
+    
 
+    <Footer/>
         </div>
     );
 };

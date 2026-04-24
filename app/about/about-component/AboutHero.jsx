@@ -18,7 +18,7 @@ export default function AboutHero() {
             alt="background"
             fill
             priority
-            className="object-contain"
+            className="object-cover"
           />
         </div>
       </div>

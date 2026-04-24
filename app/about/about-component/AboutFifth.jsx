@@ -91,7 +91,7 @@ export default function AboutFifth() {
             .slider {
     display: flex;
     width: max-content;
-    animation: scroll 20s linear infinite;
+    animation: scroll 35s linear infinite;
   }
 
   .slider:hover {

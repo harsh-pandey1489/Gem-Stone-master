@@ -11,7 +11,7 @@ export default function VastuEigth() {
     const options = ["Residential Villa", "Apartment", "Office"];
     return (
         <section className="w-full flex justify-center px-4 py-10 bg-[#FFFFFF]">
-            <div className="w-full max-w-7xl bg-[#e9e9e9] rounded-[40px] overflow-hidden grid grid-cols-1 md:grid-cols-2">
+            <div className="w-full max-w-7xl bg-[#e9e9e9] rounded-[40px] overflow-hidden grid grid-cols-1 lg:grid-cols-2">
 
 
                 <div className="p-6 sm:p-10 md:py-14 md:px-20">

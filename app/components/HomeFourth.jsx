@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function HomeFourth() {
     return (
-        <section className="bg-[#f7f7f7] max-w-[1720px] mx-auto py-16 px-4 md:px-25 xl:px-35">
+        <section className="bg-[#f7f7f7] max-w-[1720px] mx-auto py-16 px-4 md:px-10 xl:px-35">
 
             <div className="text-center flex flex-col items-center">
                 <p className="text-[#E57661] text-sm tracking-widest font-medium">
