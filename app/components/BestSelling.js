@@ -109,7 +109,7 @@ export default function BestSelling() {
                     </span>
                 </div>
 
-                <Link href="/astrology-services">
+                <Link href="/shop">
                     <button className="view-all">View All</button>
                 </Link>
             </div>

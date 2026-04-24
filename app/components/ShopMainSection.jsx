@@ -99,12 +99,12 @@ const ShopMainSection = () => {
     >
       <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-30">
 
-        {/* 🔥 Top Featured Grid - 70/30 split to match SS18 */}
-        <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_0.8fr] gap-6 mb-7 items-start">
+        {/* 🔥 Top Featured Grid - 2 columns at 768px, custom split at lg */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.2fr_0.8fr] gap-10 md:gap-6 mb-7 items-start">
           <div className="md:-mt-4">
             <ShopProductCard product={BASE_GEMSTONES[0]} showArrow={true} />
           </div>
-          <div className="md:mt-19">
+          <div className="md:mt-0 lg:mt-19">
             <ShopProductCard product={BASE_GEMSTONES[1]} />
           </div>
         </div>

@@ -1,6 +1,6 @@
-
 "use client";
 
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 
 const cards = [
@@ -22,20 +22,38 @@ const cards = [
         desc: "Designing entryways that invite 'Prana', ensuring your environment breathes with vitality and creative spark.",
         img: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776502027/Personalized_Remedies_zwahiu.png",
     },
-    // {
-    //     title: "Personalized Remedies",
-    //     subtitle: "",
-    //     desc: "Designing entryways that invite 'Prana', ensuring your environment breathes with vitality and creative spark.",
-    //     img: "https://res.cloudinary.com/dumjuhrob/image/upload/v1776502027/Personalized_Remedies_zwahiu.png",
-    // },
 ];
 
-
-
 export default function AboutFifth() {
+    const scrollRef = useRef(null);
+    const [isPaused, setIsPaused] = useState(false);
+
+    useEffect(() => {
+        const scrollContainer = scrollRef.current;
+        if (!scrollContainer) return;
+
+        let animationFrameId;
+        const scrollSpeed = 0.8; // Adjust for speed
+
+        const scroll = () => {
+            if (!isPaused) {
+                scrollContainer.scrollLeft += scrollSpeed;
+                
+                // Infinite loop: reset to start when reaching halfway
+                if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth / 2) {
+                    scrollContainer.scrollLeft = 0;
+                }
+            }
+            animationFrameId = requestAnimationFrame(scroll);
+        };
+
+        animationFrameId = requestAnimationFrame(scroll);
+
+        return () => cancelAnimationFrame(animationFrameId);
+    }, [isPaused]);
+
     return (
         <section className="py-16 bg-[#f6f6f6] overflow-hidden">
-
             {/* Heading */}
             <div className="text-center mb-10 px-4">
                 <h3 className="text-3xl md:text-[39px] font-[500] text-[#303030]">
@@ -47,23 +65,28 @@ export default function AboutFifth() {
                 </p>
             </div>
 
-            {/* Slider */}
-            <div className="relative group">
-                <div className="flex w-max slider group-hover:[animation-play-state:paused]">
-
-                    {[...cards, ...cards, ...cards, ...cards].map((card, i) => (
+            {/* Slider Container */}
+            <div 
+                ref={scrollRef}
+                className="relative group overflow-x-auto no-scrollbar"
+                onMouseEnter={() => setIsPaused(true)}
+                onMouseLeave={() => setIsPaused(false)}
+            >
+                <div className="flex w-max gap-6 py-4 px-6">
+                    {/* Triple the cards to ensure seamless infinite scroll on larger screens */}
+                    {[...cards, ...cards, ...cards].map((card, i) => (
                         <div
                             key={i}
                             className="w-[280px] md:w-[360px] bg-white rounded-[40px]  p-6 mx-4 flex-shrink-0"
                         >
 
-                            <Image
-                                src={card.img}
-                                alt={card.title}
+                                <Image
+                                    src={card.img}
+                                    alt={card.title}
                                 width={300}
                                 height={300}
                                 className="object-contain w-full"
-                            />
+                                />
 
 
                             <h4 className="text-[24px] font-[500] mt-4 text-[#191C1D]">
@@ -72,8 +95,8 @@ export default function AboutFifth() {
 
                             {card.subtitle && (
                                 <p className="text-[15px] text-[#303030] mt-1">
-                                    {card.subtitle}
-                                </p>
+                                {card.subtitle}
+                            </p>
                             )}
 
                             <p className="text-[19px] text-[#303030] mt-4 leading-relaxed">
@@ -85,28 +108,14 @@ export default function AboutFifth() {
             </div>
 
             <style jsx>{`
-        // .animate-scroll {
-        //   animation: scroll 15s linear infinite;
-        // }
-            .slider {
-    display: flex;
-    width: max-content;
-    animation: scroll 35s linear infinite;
-  }
-
-  .slider:hover {
-    animation-play-state: paused;
-  }
-
-        @keyframes scroll {
-          from {
-            transform: translateX(0);
-          }
-          to {
-            transform: translateX(-50%);
-          }
-        }
-      `}</style>
+                .no-scrollbar::-webkit-scrollbar {
+                    display: none;
+                }
+                .no-scrollbar {
+                    -ms-overflow-style: none;
+                    scrollbar-width: none;
+                }
+            `}</style>
         </section>
     );
 }

@@ -158,10 +158,47 @@ const PRODUCTS_DATA = {
         },
         shippingNote: 'Free shipping is only available when full cart value exceeds $99.99.',
     },
+    5: {
+        id: 5,
+        name: 'Natural Pearl (Moti)',
+        subtitle: 'Lustrous Basra Quality',
+        price: 450.00,
+        rating: 4.7,
+        reviews: 42,
+        tag: 'FOR EMOTIONAL BALANCE & PEACE',
+        image: 'https://res.cloudinary.com/daup99ghe/image/upload/v1776753943/Pearl_Moti_zeplzm.png',
+        imageBg: 'bg-[#F7F8FA]',
+        description: 'Moon\'s calm energy for emotional balance and mental clarity. This natural Pearl is known for its soothing effects on the mind and heart.',
+        physicalAttributes: {
+            weight: '5.50 Carats',
+            cut: 'Round / Button',
+            origin: 'South Sea',
+        },
+        vedicDetails: {
+            day: 'Monday Morning',
+            finger: 'Pinky Finger',
+            metal: 'Silver',
+        },
+        wearingRitual: {
+            title: 'Wearing Ritual',
+            instructions: 'To activate this Pearl, wash in raw milk and gangajal, then energize with the Moon Mantra:',
+            mantra: '"Om Shram Shreem Shraum Sah Chandraya Namah"',
+            downloadLink: 'Download Full Ritual Guide',
+        },
+        tabs: {
+            description: 'Moon\'s calm energy for emotional balance and mental clarity. This natural Pearl is known for its soothing effects on the mind and heart.',
+            benefits: 'Reduces stress, improves focus, brings emotional stability, enhances memory and intuition.',
+            astrologicalSignificance: 'Ruled by the Moon, Pearl balances your water element and strengthens your lunar energy for mental peace.',
+            wearingMethod: 'Wear in a silver ring on the pinky finger on Monday morning.',
+            certification: 'Lab Tested, Expert Verified, Gia Certified',
+        },
+        shippingNote: 'Free shipping is only available when full cart value exceeds $99.99.',
+    },
 };
 
-export default function ProductDetailPage({ params }) {
-    const product = PRODUCTS_DATA[params.id] || PRODUCTS_DATA[1];
+export default async function ProductDetailPage({ params }) {
+    const { id } = await params;
+    const product = PRODUCTS_DATA[id] || PRODUCTS_DATA[1];
 
     return (
         <main className="min-h-screen" style={{ background: 'radial-gradient(140.3% 104.29% at 10% 20%, rgba(254, 212, 136, 0.15) 0%, #F8F9FA 90%)' }}>

@@ -88,7 +88,7 @@ export default function VastuEigth() {
                         />
                     </div>
 
-                    <button className="w-full bg-[#7a5a1f] text-white py-4 rounded-xl text-sm sm:text-base font-medium shadow-md hover:opacity-90 transition">
+                    <button className="w-full cursor-pointer bg-[#7a5a1f] text-white py-4 rounded-xl text-sm sm:text-base font-medium shadow-md hover:opacity-90 transition">
                         Request Consultation
                     </button>
                 </div>
