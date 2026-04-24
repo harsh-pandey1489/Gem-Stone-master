@@ -110,8 +110,7 @@ export default function TrustedProducts() {
     Business Growth
   </span>
 </div>
-
-  <Link href="/astrology-services">
+<Link href="/shop">
                     <button className="view-all">View All</button>
                 </Link>
       </div>

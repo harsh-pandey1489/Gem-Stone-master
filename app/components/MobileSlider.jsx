@@ -81,7 +81,7 @@ const MobileSlider = ({ items = [] }) => {
         {items.map((item, i) => (
           <div
             key={i}
-            className="w-full flex-shrink-0 snap-center"
+            className="w-[88%] flex-shrink-0 snap-center px-2"
           >
             <ShopProductCard product={item} />
           </div>

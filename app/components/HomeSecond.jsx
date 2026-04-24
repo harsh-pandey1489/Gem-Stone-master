@@ -119,11 +119,11 @@ const HomeSecond = () => {
                         </p>
 
                         <div className="flex gap-4 flex-wrap">
-                            <button className="bg-[#E57661] rounded-[6px] text-white px-10 py-5 ">
+                            <button className="bg-[#E57661]  cursor-pointer rounded-[6px] text-white px-10 py-5 hover:bg-white hover:text-[#E57661] border border-[#E57661]  ">
                                 Shop Collection
                             </button>
 
-                            <button className="border border-[#E57661] rounded-[6px] text-[#E57661] px-10 py-5">
+                            <button className="border border-[#E57661] cursor-pointer rounded-[6px] text-[#E57661] px-10 py-5 hover:bg-[#E57661] hover:text-white  ">
                                 Authenticity Guide
                             </button>
                         </div>
